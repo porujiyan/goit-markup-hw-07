@@ -45,6 +45,12 @@
             </li>
           </ul>
         </address>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="burger-menu-icon" width="32" height="22" viewBox="0 0 32 22">
+            <use href="images/icons.svg#burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -100,7 +106,7 @@
                   </p>
                 </div>
                 <div class="portfolio-description">
-                  <h3>Banking App Interface Concept</h3>
+                  <h4>Banking App Interface Concept</h4>
                   <p>App</p>
                 </div>
               </a>
@@ -122,7 +128,7 @@
                   </p>
                 </div>
                 <div class="portfolio-description">
-                  <h3>Cashless Payment</h3>
+                  <h4>Cashless Payment</h4>
                   <p>Marketing</p>
                 </div>
               </a>
@@ -144,7 +150,7 @@
                   </p>
                 </div>
                 <div class="portfolio-description">
-                  <h3>Meditation App</h3>
+                  <h4>Meditation App</h4>
                   <p>App</p>
                 </div>
               </a>
@@ -166,7 +172,7 @@
                   </p>
                 </div>
                 <div class="portfolio-description">
-                  <h3>Taxi Service</h3>
+                  <h4>Taxi Service</h4>
                   <p>Marketing</p>
                 </div>
               </a>
@@ -188,7 +194,7 @@
                   </p>
                 </div>
                 <div class="portfolio-description">
-                  <h3>Screen Illustations</h3>
+                  <h4>Screen Illustations</h4>
                   <p>Design</p>
                 </div>
               </a>
@@ -210,7 +216,7 @@
                   </p>
                 </div>
                 <div class="portfolio-description">
-                  <h3>Online Courses</h3>
+                  <h4>Online Courses</h4>
                   <p>Marketing</p>
                 </div>
               </a>
@@ -232,7 +238,7 @@
                   </p>
                 </div>
                 <div class="portfolio-description">
-                  <h3>Instagram Stories Concept</h3>
+                  <h4>Instagram Stories Concept</h4>
                   <p>Design</p>
                 </div>
               </a>
@@ -254,7 +260,7 @@
                   </p>
                 </div>
                 <div class="portfolio-description">
-                  <h3>Organic Food</h3>
+                  <h4>Organic Food</h4>
                   <p>Web Site</p>
                 </div>
               </a>
@@ -276,7 +282,7 @@
                   </p>
                 </div>
                 <div class="portfolio-description">
-                  <h3>Fresh Coffee</h3>
+                  <h4>Fresh Coffee</h4>
                   <p>Web Site</p>
                 </div>
               </a>
@@ -362,5 +368,82 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile View -->
+    <div class="menu-container js-menu-container">
+      <button class="menu-toggle menu-close js-close-menu">
+        <svg class="modal-close-icon" width="8" height="8" viewBox="0 0 8 8">
+          <use href="images/icons.svg#modal-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-navigation-list">
+        <li>
+          <a class="mobile-navigation-link" href="index.html">
+            <h2>Studio</h2>
+          </a>
+        </li>
+
+        <li>
+          <a class="mobile-navigation-link mobile-active" href="portfolio.html">
+            <h2>Portfolio</h2>
+          </a>
+        </li>
+
+        <li>
+          <a class="mobile-navigation-link" href="#">
+            <h2>Contacts</h2>
+          </a>
+        </li>
+      </ul>
+
+      <address>
+        <ul class="mobile-address-list">
+          <li>
+            <a class="mobile-number-link" href="tel:+110001111111"><h2>+11 (000) 111-11-11</h2></a>
+          </li>
+
+          <li>
+            <a class="mobile-email-link" href="mailto:info@devstudio.com"><h4>info@devstudio.com</h4></a>
+          </li>
+        </ul>
+      </address>
+
+      <ul class="mobile-socmed-list">
+        <li>
+          <a class="team-socmed-item" href="#" target="_blank" rel="noreferrer noopener">
+            <svg class="team-socmed-icon" width="16" height="16" viewBox="0 0 16 16">
+              <use href="images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a class="team-socmed-item" href="#" target="_blank" rel="noreferrer noopener">
+            <svg class="team-socmed-icon" width="16" height="16" viewBox="0 0 16 16">
+              <use href="images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a class="team-socmed-item" href="#" target="_blank" rel="noreferrer noopener">
+            <svg class="team-socmed-icon" width="16" height="16" viewBox="0 0 16 16">
+              <use href="images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a class="team-socmed-item" href="#" target="_blank" rel="noreferrer noopener">
+            <svg class="team-socmed-icon" width="16" height="16" viewBox="0 0 16 16">
+              <use href="images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

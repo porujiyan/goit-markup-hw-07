@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale-1.0">
     <meta name="description" content="GoIT Homework">
-    <title>GoIT Homework 06</title>
+    <title>GoIT Homework 07</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/modern-normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap">
@@ -45,12 +45,18 @@
             </li>
           </ul>
         </address>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="burger-menu-icon" width="32" height="22" viewBox="0 0 32 22">
+            <use href="images/icons.svg#burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
       <section class="hero-section">
-        <div class="hero container">
+        <div class="hero">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
 
           <button class="order-button" type="button" data-modal-open>
@@ -165,7 +171,7 @@
                 width="264"
               >
               <div class="team-details">
-                <h3>Mark Guerrero</h3>
+                <h4>Mark Guerrero</h4>
                 <p>Product Designer</p>
                 <ul class="team-socmed-list">
                   <li>
@@ -210,7 +216,7 @@
                 width="264"
               >
               <div class="team-details">
-                <h3>Tom Ford</h3>
+                <h4>Tom Ford</h4>
                 <p>Frontend Developer</p>
                 <ul class="team-socmed-list">
                   <li>
@@ -255,7 +261,7 @@
                 width="264"
               >
               <div class="team-details">
-                <h3>Camila Garcia</h3>
+                <h4>Camila Garcia</h4>
                 <p>Marketing</p>
                 <ul class="team-socmed-list">
                   <li>
@@ -300,7 +306,7 @@
                 width="264"
               >
               <div class="team-details">
-                <h3>Daniel Wilson</h3>
+                <h4>Daniel Wilson</h4>
                 <p>UI Designer</p>
                 <ul class="team-socmed-list">
                   <li>
@@ -342,7 +348,7 @@
       </section>
 
       <section class="customer-section">
-        <div class="container">
+        <div>
           <h2 class="customer-title">Customers</h2>
 
           <ul class="customer-list">
@@ -522,6 +528,84 @@
             Send
           </button>
         </div>
+      </div>
+    </div>
+
+    <!-- Mobile View -->
+    <div class="menu-container js-menu-container">
+      <button class="menu-toggle menu-close js-close-menu">
+        <svg class="modal-close-icon" width="8" height="8" viewBox="0 0 8 8">
+          <use href="images/icons.svg#modal-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-navigation-list">
+        <li>
+          <a class="mobile-navigation-link mobile-active" href="index.html">
+            <h2>Studio</h2>
+          </a>
+        </li>
+
+        <li>
+          <a class="mobile-navigation-link" href="portfolio.html">
+            <h2>Portfolio</h2>
+          </a>
+        </li>
+
+        <li>
+          <a class="mobile-navigation-link" href="#">
+            <h2>Contacts</h2>
+          </a>
+        </li>
+      </ul>
+
+      <address>
+        <ul class="mobile-address-list">
+          <li>
+            <a class="mobile-number-link" href="tel:+110001111111"><h2>+11 (000) 111-11-11</h2></a>
+          </li>
+
+          <li>
+            <a class="mobile-email-link" href="mailto:info@devstudio.com"><h4>info@devstudio.com</h4></a>
+          </li>
+        </ul>
+      </address>
+
+      <ul class="mobile-socmed-list">
+        <li>
+          <a class="team-socmed-item" href="#" target="_blank" rel="noreferrer noopener">
+            <svg class="team-socmed-icon" width="16" height="16" viewBox="0 0 16 16">
+              <use href="images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a class="team-socmed-item" href="#" target="_blank" rel="noreferrer noopener">
+            <svg class="team-socmed-icon" width="16" height="16" viewBox="0 0 16 16">
+              <use href="images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a class="team-socmed-item" href="#" target="_blank" rel="noreferrer noopener">
+            <svg class="team-socmed-icon" width="16" height="16" viewBox="0 0 16 16">
+              <use href="images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a class="team-socmed-item" href="#" target="_blank" rel="noreferrer noopener">
+            <svg class="team-socmed-icon" width="16" height="16" viewBox="0 0 16 16">
+              <use href="images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
